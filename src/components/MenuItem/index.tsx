@@ -3,7 +3,8 @@ import { Container, Link } from './style';
 export interface MenuItemContent{
     title:string,
     url:string,
-    img?:boolean    
+    img?:boolean,
+    auth?:boolean    
 }
 interface MenuItemProps{
     item:MenuItemContent,

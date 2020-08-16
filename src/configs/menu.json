@@ -2,19 +2,36 @@
     {
         "item":{
             "title":"Perfil",
-            "url":"/profile"
+            "url":"/profile",
+            "auth":true
         }
     },
     {
         "item":{
             "title":"Op",
-            "url":"/op"
+            "url":"/op",
+            "auth":true
         }
     },
     {
         "item":{
             "title":"Procurar",
-            "url":"/search"
+            "url":"/search",
+            "auth":true
+        }
+    },
+    {
+        "item":{
+            "title":"Login",
+            "url":"/login",
+            "auth":false
+        }
+    },
+    {
+        "item":{
+            "title":"Register",
+            "url":"/register",
+            "auth":false
         }
     }
 ]
