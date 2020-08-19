@@ -21,8 +21,8 @@ const Register: React.FC = ()=>{
     const [image, setImage] = useState<File|null>(null);
     const handleSubmission = (e:FormEvent)=>{
         e.preventDefault();
-        
-        api.post('users',jsonToFormData(form,image),{headers:{'Content-Type':'multipart/form-data'}})
+        const formData:FormData = jsonToFormData(form,image);
+        api.post('users/',formData,{headers:{'Content-Type':'multipart/form-data'}})
         .then(response=>{
             console.log(response);
         })
