@@ -29,7 +29,7 @@
     },
     {
         "item":{
-            "title":"Register",
+            "title":"Registrar",
             "url":"/register",
             "auth":false
         }

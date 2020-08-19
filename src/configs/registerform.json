@@ -1,0 +1,59 @@
+[{
+    "input":{
+        "name":"name",
+        "type":"text",
+        "label":"Nome",
+        "placeholder":"Entre com seu nome"
+    }
+},
+{
+    "input":{
+        "name":"email",
+        "type":"email",
+        "label":"Email",
+        "placeholder":"Entre com seu email"
+    }
+},
+{
+    "input":{
+        "name":"senha",
+        "type":"password",
+        "label":"Senha",
+        "placeholder":"Entre com sua senha"
+    }
+},
+{
+    "input":{
+        "name":"birthdate",
+        "label":"Dia de nascimento",
+        "type":"date"
+    }
+},
+{
+    "input":{
+        "name":"country",
+        "label":"País",
+        "placeholder":"Digite o nome do seu pais"
+    }
+},
+{
+    "input":{
+        "name":"state",
+        "label":"estado",
+        "placeholder":"Digite o nome do seu estado"
+    }
+},
+{
+    "input":{
+        "name":"city",
+        "label":"Cidade",
+        "placeholder":"Digite o nome da sua cidade"
+    }
+},
+{
+    "input":{
+        "name":"image",
+        "type":"file",
+        "label":"Imagem de perfil"
+    }
+}]
