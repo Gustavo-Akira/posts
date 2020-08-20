@@ -6,6 +6,7 @@ import values from '../../configs/registerform.json';
 import { buttonPrimaryColor } from '../../constants/colors';
 import api from '../../api/api';
 import jsonToFormData from '../../helpers/jsonToFormData';
+import { useHistory } from 'react-router-dom';
 
 interface InputsProps{
     input:{
@@ -16,6 +17,7 @@ interface InputsProps{
     }
 }
 const Register: React.FC = ()=>{
+    const history = useHistory();
     const array:Array<InputsProps> = JSON.parse(JSON.stringify(values));
     const [form,setForm] = useState(JSON.parse(JSON.stringify({})));
     const [image, setImage] = useState<File|null>(null);
@@ -24,7 +26,8 @@ const Register: React.FC = ()=>{
         const formData:FormData = jsonToFormData(form,image);
         api.post('users/',formData,{headers:{'Content-Type':'multipart/form-data'}})
         .then(response=>{
-            console.log(response);
+            alert('Cadsatro realizado com sucesso');
+            history.push('/login');
         })
         .catch(response=>{
             console.log(response);
